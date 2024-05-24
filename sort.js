@@ -1,7 +1,7 @@
 let lst = [];
 
 for (let i = 0; i < 10; i++){
-    lst.push(i);
+    lst.push(Math.random()*10);
 }
 
 console.log(lst);
@@ -17,7 +17,6 @@ function my_sort(lst){
                 max = j;
             }
         }
-        console.log(max);
         t = lst[i];
         lst[i] = lst[max];
         lst[max] = t;
